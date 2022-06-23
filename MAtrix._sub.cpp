@@ -81,3 +81,22 @@ int main()
 	Delet_matrix(mat3, size);
 
 }
+
+// more effectiv
+/*
+int **mul_matrix_el(int **first, int **second, int **third, int size)
+{
+    int i, j, k, b;
+    for (i = 0; i < size; ++i)
+    {
+        for (k = 0; k < size; ++k)
+        {
+            b = first[i][k];
+            for (j = 0; j < size; ++j)
+            {
+                third[i][j] += b * second[k][j];
+            }
+        }
+    }
+    return third;
+}*/
